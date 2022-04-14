@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     var ref: DatabaseReference!
     // 'develop' 브랜치에서 개발 시작.
     // 'dev-chan' 브랜치에서 개발 시작.
+    // merge test 2번째
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
