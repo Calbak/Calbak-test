@@ -11,6 +11,7 @@ import FirebaseDatabase
 
 class LoginViewController: UIViewController {
     var ref: DatabaseReference!
+    // 'develop' 브랜치에서 개발 시작.
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
