@@ -1,0 +1,6 @@
+framework module Pods_calbak_auth_proto {
+  umbrella header "Pods-calbak-auth-proto-umbrella.h"
+
+  export *
+  module * { export * }
+}
