@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1A397A6598962DD35A18B0EC /* Pods_calbak_auth_proto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A27CD7A44E8EAC704DDBC52 /* Pods_calbak_auth_proto.framework */; };
+		8D2AD532280AD3250057F879 /* EditProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AD531280AD3250057F879 /* EditProfile.storyboard */; };
+		8D2AD536280AD3510057F879 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2AD535280AD3510057F879 /* EditProfileViewController.swift */; };
+		8D2AD53B280AD3EE0057F879 /* MyProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2AD53A280AD3EE0057F879 /* MyProfile.storyboard */; };
+		8D494667280C79BB0076EF1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D494666280C79BB0076EF1C /* GoogleService-Info.plist */; };
+		8D55C2D1280ECD2F008FC25D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D55C2D0280ECD2F008FC25D /* StorageManager.swift */; };
+		8D7043CD280BDDAC008ED1F6 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7043CC280BDDAC008ED1F6 /* MyProfileViewController.swift */; };
+		8D71EBD328158D900031F1CD /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D71EBD228158D900031F1CD /* MoreInfoViewController.swift */; };
 		8D7327632807FA830031B07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7327622807FA830031B07E /* AppDelegate.swift */; };
 		8D7327652807FA830031B07E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7327642807FA830031B07E /* SceneDelegate.swift */; };
 		8D73276A2807FA830031B07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7327682807FA830031B07E /* Main.storyboard */; };
@@ -17,7 +24,6 @@
 		8D73277C2807FADD0031B07E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7327772807FADD0031B07E /* LoginViewController.swift */; };
 		8D73277D2807FADD0031B07E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7327782807FADD0031B07E /* SignUpViewController.swift */; };
 		8D73277E2807FADD0031B07E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7327792807FADD0031B07E /* WelcomeViewController.swift */; };
-		8D7327832807FC2D0031B07E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D7327822807FC2D0031B07E /* GoogleService-Info.plist */; };
 		8DBEFF4F2808134300E3EA98 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEFF4E2808134300E3EA98 /* UserInfoManager.swift */; };
 		8DBEFF512808194A00E3EA98 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBEFF502808194900E3EA98 /* MainPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +32,13 @@
 		3F42198ED1CA5135FA5C4DA6 /* Pods-calbak-auth-proto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calbak-auth-proto.debug.xcconfig"; path = "Target Support Files/Pods-calbak-auth-proto/Pods-calbak-auth-proto.debug.xcconfig"; sourceTree = "<group>"; };
 		61C5787D957FA261F8D137E4 /* Pods-calbak-auth-proto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calbak-auth-proto.release.xcconfig"; path = "Target Support Files/Pods-calbak-auth-proto/Pods-calbak-auth-proto.release.xcconfig"; sourceTree = "<group>"; };
 		8A27CD7A44E8EAC704DDBC52 /* Pods_calbak_auth_proto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calbak_auth_proto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2AD531280AD3250057F879 /* EditProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditProfile.storyboard; sourceTree = "<group>"; };
+		8D2AD535280AD3510057F879 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		8D2AD53A280AD3EE0057F879 /* MyProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyProfile.storyboard; sourceTree = "<group>"; };
+		8D494666280C79BB0076EF1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D55C2D0280ECD2F008FC25D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		8D7043CC280BDDAC008ED1F6 /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		8D71EBD228158D900031F1CD /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 		8D73275F2807FA830031B07E /* calbak-auth-proto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calbak-auth-proto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D7327622807FA830031B07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D7327642807FA830031B07E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +47,9 @@
 		8D73276E2807FA850031B07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7327702807FA850031B07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7327762807FADD0031B07E /* SignUpSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpSuccessViewController.swift; sourceTree = "<group>"; };
-		8D7327772807FADD0031B07E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		8D7327772807FADD0031B07E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		8D7327782807FADD0031B07E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		8D7327792807FADD0031B07E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		8D7327822807FC2D0031B07E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBEFF4E2808134300E3EA98 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		8DBEFF502808194900E3EA98 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +74,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D1E5377280ECB4A00041FCB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8D2AD53A280AD3EE0057F879 /* MyProfile.storyboard */,
+				8D2AD531280AD3250057F879 /* EditProfile.storyboard */,
+				8D7327682807FA830031B07E /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8D2AD52F280AD28B0057F879 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				8D7327772807FADD0031B07E /* LoginViewController.swift */,
+				8D7327762807FADD0031B07E /* SignUpSuccessViewController.swift */,
+				8D7327782807FADD0031B07E /* SignUpViewController.swift */,
+				8DBEFF4E2808134300E3EA98 /* UserInfoManager.swift */,
+				8D7327792807FADD0031B07E /* WelcomeViewController.swift */,
+				8D71EBD228158D900031F1CD /* MoreInfoViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8D2AD530280AD2F60057F879 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8D2AD535280AD3510057F879 /* EditProfileViewController.swift */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		8D2AD539280AD3C20057F879 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				8D7043CC280BDDAC008ED1F6 /* MyProfileViewController.swift */,
+				8DBEFF502808194900E3EA98 /* MainPageViewController.swift */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
 		8D7327562807FA830031B07E = {
 			isa = PBXGroup;
 			children = (
@@ -83,19 +135,17 @@
 		8D7327612807FA830031B07E /* calbak-auth-proto */ = {
 			isa = PBXGroup;
 			children = (
-				8D7327822807FC2D0031B07E /* GoogleService-Info.plist */,
-				8D7327772807FADD0031B07E /* LoginViewController.swift */,
-				8D7327762807FADD0031B07E /* SignUpSuccessViewController.swift */,
-				8D7327782807FADD0031B07E /* SignUpViewController.swift */,
-				8DBEFF4E2808134300E3EA98 /* UserInfoManager.swift */,
-				8D7327792807FADD0031B07E /* WelcomeViewController.swift */,
+				8D1E5377280ECB4A00041FCB /* Scenes */,
+				8D2AD539280AD3C20057F879 /* MyProfile */,
+				8D2AD530280AD2F60057F879 /* EditProfile */,
+				8D2AD52F280AD28B0057F879 /* Authentication */,
 				8D7327622807FA830031B07E /* AppDelegate.swift */,
 				8D7327642807FA830031B07E /* SceneDelegate.swift */,
-				8D7327682807FA830031B07E /* Main.storyboard */,
-				8DBEFF502808194900E3EA98 /* MainPageViewController.swift */,
 				8D73276B2807FA850031B07E /* Assets.xcassets */,
 				8D73276D2807FA850031B07E /* LaunchScreen.storyboard */,
 				8D7327702807FA850031B07E /* Info.plist */,
+				8D494666280C79BB0076EF1C /* GoogleService-Info.plist */,
+				8D55C2D0280ECD2F008FC25D /* StorageManager.swift */,
 			);
 			path = "calbak-auth-proto";
 			sourceTree = "<group>";
@@ -170,9 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D73276F2807FA850031B07E /* LaunchScreen.storyboard in Resources */,
-				8D7327832807FC2D0031B07E /* GoogleService-Info.plist in Resources */,
+				8D2AD532280AD3250057F879 /* EditProfile.storyboard in Resources */,
+				8D2AD53B280AD3EE0057F879 /* MyProfile.storyboard in Resources */,
 				8D73276C2807FA850031B07E /* Assets.xcassets in Resources */,
 				8D73276A2807FA830031B07E /* Main.storyboard in Resources */,
+				8D494667280C79BB0076EF1C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,12 +279,16 @@
 			files = (
 				8DBEFF512808194A00E3EA98 /* MainPageViewController.swift in Sources */,
 				8D73277D2807FADD0031B07E /* SignUpViewController.swift in Sources */,
+				8D55C2D1280ECD2F008FC25D /* StorageManager.swift in Sources */,
 				8D7327632807FA830031B07E /* AppDelegate.swift in Sources */,
 				8D73277B2807FADD0031B07E /* SignUpSuccessViewController.swift in Sources */,
+				8D7043CD280BDDAC008ED1F6 /* MyProfileViewController.swift in Sources */,
 				8D73277C2807FADD0031B07E /* LoginViewController.swift in Sources */,
 				8D7327652807FA830031B07E /* SceneDelegate.swift in Sources */,
 				8DBEFF4F2808134300E3EA98 /* UserInfoManager.swift in Sources */,
+				8D2AD536280AD3510057F879 /* EditProfileViewController.swift in Sources */,
 				8D73277E2807FADD0031B07E /* WelcomeViewController.swift in Sources */,
+				8D71EBD328158D900031F1CD /* MoreInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

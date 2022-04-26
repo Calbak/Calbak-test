@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="10w-Xw-tai">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eoJ-0b-K6r">
+            <objects>
+                <navigationController id="10w-Xw-tai" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uo2-L7-Etr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Rxa-iT-sbR" kind="relationship" relationship="rootViewController" id="nhg-p9-TgG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4UV-VN-AS8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1720" y="-68"/>
+        </scene>
+        <!--My Profile View Controller-->
+        <scene sceneID="ghS-DZ-tnJ">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileViewController" id="Rxa-iT-sbR" customClass="MyProfileViewController" customModule="calbak_auth_proto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVs-RR-cLC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aP6-rw-caH">
+                                <rect key="frame" x="147" y="128" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="jB3-YZ-RfK"/>
+                                    <constraint firstAttribute="width" constant="120" id="k25-I0-dF4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ooo 님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnI-tI-wuH">
+                                <rect key="frame" x="178.5" y="268" width="57" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9w-o2-1x5">
+                                <rect key="frame" x="165.5" y="312" width="83.5" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oo9-II-RTM">
+                                <rect key="frame" x="20" y="409" width="374" height="54"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xps-QS-P7S">
+                                <rect key="frame" x="354" y="310.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="5Nv-WD-nQf"/>
+                                    <constraint firstAttribute="height" constant="40" id="yGS-gC-5X1"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="square.and.pencil" catalog="system"/>
+                                <connections>
+                                    <action selector="tappedEditProfileButton:" destination="Rxa-iT-sbR" eventType="touchUpInside" id="G3f-Ac-UrU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dge-8G-oac"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aP6-rw-caH" firstAttribute="centerX" secondItem="Dge-8G-oac" secondAttribute="centerX" id="GAN-gF-6p8"/>
+                            <constraint firstItem="Dge-8G-oac" firstAttribute="trailing" secondItem="Oo9-II-RTM" secondAttribute="trailing" constant="20" id="P7S-QV-ZwD"/>
+                            <constraint firstItem="aP6-rw-caH" firstAttribute="top" secondItem="Dge-8G-oac" secondAttribute="top" constant="40" id="UUA-44-IJP"/>
+                            <constraint firstItem="Oo9-II-RTM" firstAttribute="top" secondItem="xps-QS-P7S" secondAttribute="bottom" constant="58.5" id="VIO-zC-uvc"/>
+                            <constraint firstItem="xps-QS-P7S" firstAttribute="centerY" secondItem="i9w-o2-1x5" secondAttribute="centerY" id="ZdW-lR-Wam"/>
+                            <constraint firstItem="wnI-tI-wuH" firstAttribute="top" secondItem="aP6-rw-caH" secondAttribute="bottom" constant="20" id="Zyy-hN-XzC"/>
+                            <constraint firstItem="i9w-o2-1x5" firstAttribute="centerX" secondItem="Dge-8G-oac" secondAttribute="centerX" id="bAY-I9-zBv"/>
+                            <constraint firstItem="Oo9-II-RTM" firstAttribute="leading" secondItem="Dge-8G-oac" secondAttribute="leading" constant="20" id="hPa-pZ-MIm"/>
+                            <constraint firstItem="Oo9-II-RTM" firstAttribute="top" secondItem="i9w-o2-1x5" secondAttribute="bottom" constant="60" id="ltk-wY-RHR"/>
+                            <constraint firstItem="i9w-o2-1x5" firstAttribute="top" secondItem="wnI-tI-wuH" secondAttribute="bottom" constant="20" id="m8U-1N-Ngp"/>
+                            <constraint firstItem="Oo9-II-RTM" firstAttribute="centerX" secondItem="Dge-8G-oac" secondAttribute="centerX" id="oFe-AO-EYV"/>
+                            <constraint firstItem="wnI-tI-wuH" firstAttribute="centerX" secondItem="Dge-8G-oac" secondAttribute="centerX" id="r3t-Rm-Wah"/>
+                            <constraint firstItem="Dge-8G-oac" firstAttribute="trailing" secondItem="xps-QS-P7S" secondAttribute="trailing" constant="20" id="w5p-dP-GfA"/>
+                            <constraint firstItem="Dge-8G-oac" firstAttribute="bottom" secondItem="Oo9-II-RTM" secondAttribute="bottom" constant="399" id="xa7-ED-Ntx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pEs-SF-3zH"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="i9w-o2-1x5" id="N1s-jc-TBi"/>
+                        <outlet property="profileImageView" destination="aP6-rw-caH" id="81Y-uh-Wh5"/>
+                        <outlet property="usernameLabel" destination="wnI-tI-wuH" id="LUL-dF-DZd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W8j-6P-KGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-988" y="-67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,5 +8,7 @@ target 'calbak-auth-proto' do
   # Pods for calbak-auth-proto
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'GoogleSignIn'
 
 end
