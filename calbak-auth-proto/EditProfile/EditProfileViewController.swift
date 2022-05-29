@@ -138,6 +138,10 @@ class EditProfileViewController: UIViewController {
         phoneNumberTextField.text = userDetail?.phoneNumber
         locationTextField.text = userDetail?.location ?? ""
     }
+    
+    @IBAction func tappedNavBarBackButton(_ sender: UIBarButtonItem) {
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 

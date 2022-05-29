@@ -47,7 +47,6 @@ class MyProfileViewController: UIViewController {
     
         if let profileImageURL = userDetail.profileImageURL,
            let url = URL(string: profileImageURL) {
-            print(url)
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: url)
                 DispatchQueue.main.async {
@@ -67,19 +66,6 @@ class MyProfileViewController: UIViewController {
         }
         
         /*
-        if let url = user.photoURL {
-            do {
-                print(url)
-                let data = try Data(contentsOf: url)
-                profileImageView.image = UIImage(data: data)
-            } catch let error {
-                print(error.localizedDescription)
-                return
-            }
-        }
-        */
-        
-        /*
         if let profileImageURL = UserDefaults.standard.string(forKey: "profile_image_url"),
             let url = URL(string: profileImageURL) {
             do {
@@ -91,55 +77,12 @@ class MyProfileViewController: UIViewController {
             }
         }
         */
-        
-        /*
-        if user.profileImageURL != "" {
-            guard let imageURL = user.profileImageURL,
-                  let url = URL(string: imageURL) else { return }
-            
-            do {
-                let data = try Data(contentsOf: url)
-                profileImageView.image = UIImage(data: data)
-            } catch let error {
-                print(error.localizedDescription)
-                return
-            }
-        }
-        */
     }
-    
-    /*
-    private func configureView() {
-        guard let user = self.user else { return }
-        
-        DispatchQueue.main.async {
-            self.usernameLabel.text = "\(user.username)"
-            
-            if let description = user.description {
-                self.descriptionLabel.text = "\(description)"
-            } else {
-                self.descriptionLabel.text = "자기소개를 작성해 보세요!"
-            }
-            
-            if user.profileImageURL != "" {
-                guard let imageURL = user.profileImageURL,
-                      let url = URL(string: imageURL) else { return }
-                
-                do {
-                    let data = try Data(contentsOf: url)
-                    self.profileImageView.image = UIImage(data: data)
-                } catch let error {
-                    print(error.localizedDescription)
-                    return
-                }
-            }
-        }
-    }
-    */
      
     private func showEditProfileViewController() {
         let storyboard = UIStoryboard(name: "EditProfile", bundle: nil)
         guard let vc = storyboard.instantiateViewController(withIdentifier: "EditProfileViewController") as? EditProfileViewController else { return }
+        navigationController?.isNavigationBarHidden = false
         navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -172,6 +172,9 @@
                                         <state key="normal" title="Kakao Talk으로 로그인">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tappedKakaoSignInButton:" destination="Uvf-V9-GZy" eventType="touchUpInside" id="QJi-Du-aVX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

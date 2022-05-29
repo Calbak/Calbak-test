@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.6.1)
   - AppAuth (1.5.0):
     - AppAuth/Core (= 1.5.0)
     - AppAuth/ExternalUserAgent (= 1.5.0)
@@ -63,6 +64,38 @@ PODS:
     - AppAuth/Core (~> 1.4)
     - GTMSessionFetcher/Core (~> 1.5)
   - GTMSessionFetcher/Core (1.7.1)
+  - KakaoSDK (2.9.1):
+    - KakaoSDKAuth (= 2.9.1)
+    - KakaoSDKCommon (= 2.9.1)
+    - KakaoSDKLink (= 2.9.1)
+    - KakaoSDKNavi (= 2.9.1)
+    - KakaoSDKStory (= 2.9.1)
+    - KakaoSDKTalk (= 2.9.1)
+    - KakaoSDKTemplate (= 2.9.1)
+    - KakaoSDKUser (= 2.9.1)
+  - KakaoSDKAuth (2.9.1):
+    - KakaoSDKCommon (= 2.9.1)
+  - KakaoSDKCommon (2.9.1):
+    - KakaoSDKCommon/Common (= 2.9.1)
+    - KakaoSDKCommon/Network (= 2.9.1)
+  - KakaoSDKCommon/Common (2.9.1)
+  - KakaoSDKCommon/Network (2.9.1):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.9.1)
+  - KakaoSDKLink (2.9.1):
+    - KakaoSDKCommon (= 2.9.1)
+    - KakaoSDKTemplate (= 2.9.1)
+  - KakaoSDKNavi (2.9.1):
+    - KakaoSDKCommon/Common (= 2.9.1)
+  - KakaoSDKStory (2.9.1):
+    - KakaoSDKUser (= 2.9.1)
+  - KakaoSDKTalk (2.9.1):
+    - KakaoSDKTemplate (= 2.9.1)
+    - KakaoSDKUser (= 2.9.1)
+  - KakaoSDKTemplate (2.9.1):
+    - KakaoSDKCommon/Common (= 2.9.1)
+  - KakaoSDKUser (2.9.1):
+    - KakaoSDKAuth (= 2.9.1)
   - leveldb-library (1.22.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -76,9 +109,14 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - GoogleSignIn
+  - KakaoSDK
+  - KakaoSDKAuth
+  - KakaoSDKCommon
+  - KakaoSDKUser
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - AppAuth
     - Firebase
     - FirebaseAuth
@@ -91,11 +129,21 @@ SPEC REPOS:
     - GoogleUtilities
     - GTMAppAuth
     - GTMSessionFetcher
+    - KakaoSDK
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKLink
+    - KakaoSDKNavi
+    - KakaoSDKStory
+    - KakaoSDKTalk
+    - KakaoSDKTemplate
+    - KakaoSDKUser
     - leveldb-library
     - nanopb
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
   AppAuth: 80317d99ac7ff2801a2f18ff86b48cd315ed465d
   Firebase: 7e8fe528c161b9271d365217a74c16aaf834578e
   FirebaseAuth: c5fde343630090253d3af7e2d35697b414b40202
@@ -108,10 +156,19 @@ SPEC CHECKSUMS:
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMAppAuth: 987526d41b07efb1bedda5e936fe0cb718a03113
   GTMSessionFetcher: 4577a4cc914a5a07c40a8a0ad0acc22080418c2d
+  KakaoSDK: 863b75c045a01065faf1dd67393b62dfe2b4ce3a
+  KakaoSDKAuth: 8ec514e64f57f405735e92483fdae1cc2830d351
+  KakaoSDKCommon: c4b08131fdba6770a280ffe83916048174f329bf
+  KakaoSDKLink: d138ac61dc3103d15f5b3ceafae9a29073b04bd4
+  KakaoSDKNavi: 2bf83faa1a841467d7f398c714652cb5b0e22611
+  KakaoSDKStory: 423a381e0e9686c2b4e3058f0fc62befa4bc73bd
+  KakaoSDKTalk: b4ba0628c770e1781307296b1ccaabec34327799
+  KakaoSDKTemplate: 816a1c24855b30f1ad337e754963c8b17ad5053d
+  KakaoSDKUser: 3b82c8f4b7bdd8584b296cf91d1be4b4a84102fb
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: dfa733c6b8cedbf38d938d5bd7e55eaa20244004
+PODFILE CHECKSUM: c38c281788a6f43a09ac922736770e570481ddec
 
 COCOAPODS: 1.11.3

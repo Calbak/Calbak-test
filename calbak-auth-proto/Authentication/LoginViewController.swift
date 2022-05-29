@@ -10,6 +10,9 @@ import Firebase
 import FirebaseAuth
 import FirebaseDatabase
 import GoogleSignIn
+import KakaoSDKCommon
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class LoginViewController: UIViewController {
     var ref: DatabaseReference!
@@ -94,6 +97,81 @@ class LoginViewController: UIViewController {
                 // 내일 이 부분 얘기해보기
                 
                 self.showMyProfileViewController()
+            }
+        }
+    }
+    
+    @IBAction func tappedKakaoSignInButton(_ sender: UIButton) {
+        // 카카오톡 설치 여부 확인
+        if (UserApi.isKakaoTalkLoginAvailable()) {   // 카카오톡이 디바이스에 설치되어 있다면
+            // 카카오톡 앱을 이용해 로그인을 시도한다.
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+
+                    //do something
+                    _ = oauthToken
+                    // access token 받기
+                    let accessToken = oauthToken?.accessToken
+                    
+                    self.passKakaoUserInfo()
+                }
+            }
+        }
+        else {       // 카카오톡이 디바이스에 설치되어 있지 않다면
+            // 웹 브라우저에서 카카오 계정을 통해 로그인을 시도한다.
+            UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+               if let error = error {
+                   print(error)
+               }
+               else {
+                   print("loginWithKakaoAccount() success.")
+                
+                   //do something
+                   _ = oauthToken
+                   // access token 받기
+                   let accessToken = oauthToken?.accessToken
+                   
+                   self.passKakaoUserInfo()
+               }
+            }
+        }
+    }
+    
+    private func passKakaoUserInfo() {
+        UserApi.shared.me() {(user, error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("me() success.")
+                
+                //do something
+                _ = user
+                if let user = user,
+                   let emailAddress = user.kakaoAccount?.email,
+                   let username = user.kakaoAccount?.profile?.nickname,
+                   let profileImageURL = user.kakaoAccount?.profile?.profileImageUrl {
+                    let kakaoUserInfo = UserDetail(
+                        emailAddress: emailAddress,
+                        username: username,
+                        description: nil,
+                        phoneNumber: "",
+                        location: nil,
+                        profileImageURL: profileImageURL.absoluteString
+                    )
+                    
+                    UserDetailManager.shared.insertUser(with: kakaoUserInfo) { success in
+                        if success {
+                            self.showMyProfileViewController()
+                        } else {
+                            return
+                        }
+                    }
+                }
             }
         }
     }

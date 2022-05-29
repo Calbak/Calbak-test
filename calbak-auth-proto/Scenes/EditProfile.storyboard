@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Edit Profile-->
+        <!--회원정보 수정-->
         <scene sceneID="xqn-Sb-dha">
             <objects>
                 <viewController storyboardIdentifier="EditProfileViewController" id="Tkf-0w-CHO" customClass="EditProfileViewController" customModule="calbak_auth_proto" customModuleProvider="target" sceneMemberID="viewController">
@@ -129,7 +129,13 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Edit Profile" id="PS8-Mc-LbD"/>
+                    <navigationItem key="navigationItem" title="회원정보 수정" id="VOk-UD-8XI">
+                        <barButtonItem key="leftBarButtonItem" image="chevron.left" catalog="system" id="Pgp-BZ-NFi">
+                            <connections>
+                                <action selector="tappedNavBarBackButton:" destination="Tkf-0w-CHO" id="ylw-AW-wRh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionTextField" destination="jEQ-bj-BBs" id="nDH-M7-za3"/>
@@ -161,6 +167,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
